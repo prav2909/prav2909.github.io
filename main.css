@@ -2,8 +2,8 @@ body {
     height: 0%;
     margin: 0;
     display: flex;
-    flex-direction: row;
-    background-color: white;
+    flex-direction: column;
+    background-color: black;
 }
 
 .page-content {
@@ -11,18 +11,18 @@ body {
 }
 
 h1 {
-    color: #000000;
+    color: #ffffff;
     font-family: "poppins-medium", sans-serif;
     font-size: 1.5em;
     max-width: 900px;
-    text-align: left;
+    text-align: center;
 }
 
 h2 {
-    color: #000000;
+    color: #ffffff;
     font-family: "poppins-medium", sans-serif;
     font-size: 0.9em;
-    text-align: left;
+    text-align: center;
     max-width: 900px;
     margin: 5px 10px 10px 10px;
 }
@@ -33,8 +33,8 @@ h2 {
     background-color: transparent;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     margin: 10px 10px 10px 10px;
 }
@@ -48,14 +48,14 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: left;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
     overflow: hidden;
 }
 
 .badge-panel badge {
-    color: #000000;
+    color: #ffffff;
     font-family: "poppins-medium", sans-serif;
     font-size: 1.0em;
     background-color: black;
@@ -109,7 +109,7 @@ h2 {
 }
 
 .portfolio-card h1 {
-    color: #000000;
+    color: #ffffff;
     font-family: "poppins-medium", sans-serif;
     font-size: 1.1em;
     text-align: center;
@@ -118,7 +118,7 @@ h2 {
 }
 
 .portfolio-card h2 {
-    color: #000000;
+    color: #ffffff;
     font-family: "poppins-medium", sans-serif;
     font-size: 0.9em;
     text-align: center;
@@ -152,7 +152,7 @@ h2 {
     }
 
     50% {
-        color: #000000;
+        color: #ffffff;
     }
 
     100% {
@@ -162,14 +162,14 @@ h2 {
 
 html a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
 
 
 @media (max-width: 600px) {
     .badge-panel {
         align-items: flex-start;
-        justify-content: left;
+        justify-content: center;
     }
 
 }
