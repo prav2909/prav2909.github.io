@@ -48,8 +48,8 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     padding: 10px;
     overflow: hidden;
 }
@@ -169,7 +169,7 @@ html a {
 @media (max-width: 600px) {
     .badge-panel {
         align-items: flex-start;
-        justify-content: center;
+        justify-content: left;
     }
 
 }
