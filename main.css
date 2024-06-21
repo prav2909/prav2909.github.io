@@ -2,8 +2,8 @@ body {
     height: 0%;
     margin: 0;
     display: flex;
-    flex-direction: column;
-    background-color: black;
+    flex-direction: row;
+    background-color: blue;
 }
 
 .page-content {
@@ -15,14 +15,14 @@ h1 {
     font-family: "poppins-medium", sans-serif;
     font-size: 1.5em;
     max-width: 900px;
-    text-align: center;
+    text-align: left;
 }
 
 h2 {
     color: #ffffff;
     font-family: "poppins-medium", sans-serif;
     font-size: 0.9em;
-    text-align: center;
+    text-align: left;
     max-width: 900px;
     margin: 5px 10px 10px 10px;
 }
@@ -32,8 +32,8 @@ h2 {
 .intro {
     background-color: transparent;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: left;
     justify-content: center;
     border-radius: 10px;
     margin: 10px 10px 10px 10px;
