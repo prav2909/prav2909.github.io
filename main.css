@@ -32,9 +32,9 @@ h2 {
 .intro {
     background-color: transparent;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: left;
-    justify-content: center;
+    justify-content: left;
     border-radius: 10px;
     margin: 10px 10px 10px 10px;
 }
