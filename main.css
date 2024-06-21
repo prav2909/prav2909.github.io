@@ -3,7 +3,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: row;
-    background-color: blue;
+    background-color: white;
 }
 
 .page-content {
@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    color: #ffffff;
+    color: #000000;
     font-family: "poppins-medium", sans-serif;
     font-size: 1.5em;
     max-width: 900px;
@@ -19,7 +19,7 @@ h1 {
 }
 
 h2 {
-    color: #ffffff;
+    color: #000000;
     font-family: "poppins-medium", sans-serif;
     font-size: 0.9em;
     text-align: left;
@@ -55,7 +55,7 @@ h2 {
 }
 
 .badge-panel badge {
-    color: #ffffff;
+    color: #000000;
     font-family: "poppins-medium", sans-serif;
     font-size: 1.0em;
     background-color: black;
@@ -109,7 +109,7 @@ h2 {
 }
 
 .portfolio-card h1 {
-    color: #ffffff;
+    color: #000000;
     font-family: "poppins-medium", sans-serif;
     font-size: 1.1em;
     text-align: center;
@@ -118,7 +118,7 @@ h2 {
 }
 
 .portfolio-card h2 {
-    color: #ffffff;
+    color: #000000;
     font-family: "poppins-medium", sans-serif;
     font-size: 0.9em;
     text-align: center;
@@ -152,7 +152,7 @@ h2 {
     }
 
     50% {
-        color: #ffffff;
+        color: #000000;
     }
 
     100% {
@@ -162,7 +162,7 @@ h2 {
 
 html a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
 }
 
 
