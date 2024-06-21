@@ -40,8 +40,8 @@ h2 {
 }
 
 .intro img {
-    max-width: 100%;
-    height: auto;
+    width: clamp(80px, 20vw, 200px);
+    border-radius: 8px;
 }
 
 .badge-panel {
