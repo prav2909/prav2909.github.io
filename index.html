@@ -1,269 +1,308 @@
 <!DOCTYPE html>
-<html lang="en">
+ <html lang="en">
+ 
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Language" content="en">
-    <meta name="robots" content="index, follow">
-    <meta name="revisit-after" content="1 days">
-    <title>Praveen Kumar</title>
-    <meta name="author" content="Praveen Kumar">
-    <meta name="description" content="Praveen Kumar's personal portfolio. Website under construction.">
-    <meta name="keywords" content="Deep Learning, Machine Learning, Computer Vision, Global Affairs, Economics">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="1 days">
+  <title>Praveen Kumar</title>
+  <meta name="author" content="Praveen Kumar">
+  <meta name="description" content="Praveen Kumar's personal portfolio. Website under construction.">
+  <meta name="keywords" content="Deep Learning, Machine Learning, Computer Vision, Global Affairs, Economics">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
 
-    <link rel="icon" type="image/jpeg" href="resources/pp_new_small.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/jpeg" href="resources/pp_new_small.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
 
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #e0f2f7, #f0e6ef);
-            color: #34495e;
-            line-height: 1.6;
-        }
+  <style>
+  body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0f2f7, #f0e6ef);
+  color: #34495e;
+  line-height: 1.6;
+  }
+ 
 
-        .page-content {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
+  .page-content {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  }
+ 
 
-        .intro {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+  .intro {
+  text-align: center;
+  margin-bottom: 40px;
+  }
+ 
 
-        .intro img {
-            width: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+  .intro img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+ 
 
-        .social-media {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
+  .social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  }
+ 
 
-        .social-media img {
-            width: 30px;
-            height: 30px;
-            margin: 0 10px;
-        }
+  .social-media a {
+  margin: 0 10px;
+  }
+ 
 
-        .career,
-        .portfolio {
-            background-color: #f2f2f2;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+  .social-media img,
+  .social-media i {
+  width: 35px;
+  height: 35px;
+  }
+ 
 
-        .badge-panel {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
+  .career,
+  .portfolio {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+ 
 
-        .badge-panel img {
-            width: 100px;
-            margin: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+  .badge-panel {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  }
+ 
 
-        .portfolio-panel {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+  .badge-panel img {
+  width: 100px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+ 
 
-        .portfolio-card {
-            text-align: center;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            background-color: #f9f9f9;
-            cursor: pointer; /* Add cursor pointer */
-        }
+  .portfolio-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  }
+ 
 
-        .portfolio-card img {
-            width: 100%;
-            max-height: 150px;
-            object-fit: contain;
-            margin-bottom: 10px;
-        }
+  .portfolio-card {
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  cursor: pointer;
+  }
+ 
 
-        .portfolio-card h1 {
-            font-size: 1.2em;
-            margin-bottom: 5px;
-            color: #2c3e50;
-        }
+  .portfolio-card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  }
+ 
 
-        .portfolio-card h2 {
-            font-size: 0.9em;
-            color: #7f8c8d;
-            margin-bottom: 15px;
-        }
+  .portfolio-card h1 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #2c3e50;
+  }
+ 
 
-        gh a {
-            color: #3498db;
-            text-decoration: none;
-        }
+  .portfolio-card h2 {
+  font-size: 0.9em;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+  }
+ 
 
-        h1 {
-            color: #34495e;
-        }
+  gh a {
+  color: #3498db;
+  text-decoration: none;
+  }
+ 
 
-        h2 {
-            color: #555;
-        }
+  h1 {
+  color: #34495e;
+  }
+ 
 
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-    </style>
+  h2 {
+  color: #555;
+  }
+ 
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VCTKJE6GT"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-9VCTKJE6GT');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+  </style>
+ 
 
-        function navigateTo(url) {
-            window.location.href = url;
-        }
-    </script>
-</head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VCTKJE6GT"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-9VCTKJE6GT');
+ 
 
-<body>
-    <div class="page-content">
-        <div class="intro">
-            <h1>Praveen Kumar</h1>
-            <img src="resources/pp_new_small.jpg" alt="Praveen Kumar" loading="lazy">
-            <h2>"Passionate about Deep Learning and its vast applications. Continuously learning and interested in global affairs, politics, and economics."</h2>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/praveen-kumar-b2096391/">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo">
-                </a>
-            </div>
-        </div>
+  function navigateTo(url) {
+  window.location.href = url;
+  }
+  </script>
+ </head>
+ 
 
-        <div class="career">
-            <h1>Professional Journey</h1>
-            <div class="badge-panel">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/KPIT_Technologies_Logo.svg/240px-KPIT_Technologies_Logo.svg.png" loading="lazy" title="Research and Dev Engineer">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mercedes-Benz_Logo_2010.svg/1920px-Mercedes-Benz_Logo_2010.svg.png" style="background-color: white;" loading="lazy" title="Deep Learning Engineer">
-                <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Veoneer_logo.png" loading="lazy" title="Radar Machine Learning Engineer">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Magna_logo.svg/1920px-Magna_logo.svg.png" loading="lazy" title="Machine Learning Engineer">
-            </div>
-        </div>
+ <body>
+  <div class="page-content">
+  <div class="intro">
+  <h1>Praveen Kumar</h1>
+  <img src="resources/pp_new_small.jpg" alt="Praveen Kumar" loading="lazy">
+  <h2>"Passionate about Deep Learning and its vast applications. Continuously learning and interested in global affairs, politics, and economics."</h2>
+  <div class="social-media">
+  <a href="https://www.linkedin.com/in/praveen-kumar-b2096391/">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo">
+  </a>
+  <a href="https://github.com/prav2909?tab=repositories">
+  <i class="fa fa-github" style="font-size: 30px;"></i>
+  </a>
+  <a href="https://medium.com/@praveenkumar2909">
+  <i class="fa fa-medium" style="font-size: 30px;"></i>
+  </a>
+  </div>
+  </div>
+ 
 
-        <div class="portfolio">
-            <h1>Repositories</h1>
-            <div class="portfolio-panel">
-                <div class="portfolio-card" onclick="navigateTo('https://github.com/prav2909/vision_transformer')">
-                    <img src="resources/vit.png" loading="lazy" alt="Vision Transformer (ViT)">
-                    <h1>Vision Transformer (ViT)</h1>
-                    <h2>Leveraging Self-Attention Mechanisms for Precise and Efficient Visual Categorization</h2>
-                    <gh><a href="https://github.com/prav2909/vision_transformer"><i class="fa fa-github"></i></a></gh>
-                </div>
-                <div class="portfolio-card" onclick="navigateTo('https://github.com/prav2909/ClassifyAnything')">
-                    <img src="resources/segmentation.jpg" loading="lazy" alt="Detection Transformers (DETR)">
-                    <h1>Detection Transformers (DETR)</h1>
-                    <h2>Classify and segment any image using Detection Transformers</h2>
-                    <gh><a href="https://github.com/prav2909/ClassifyAnything"><i class="fa fa-github"></i></a></gh>
-                </div>
-                <div class="portfolio-card" onclick="navigateTo('https://github.com/prav2909/yolov1')">
-                    <img src="resources/object_detection.jpg" loading="lazy" alt="YOLOV1">
-                    <h1>YOLO Reimagined</h1>
-                    <h2>Advanced Object Detection and Recognition for Enhanced Visual Perception.</h2>
-                    <gh><a href="https://github.com/prav2909/yolov1"><i class="fa fa-github"></i></a></gh>
-                </div>
-                <div class="portfolio-card" onclick="navigateTo('https://github.com/prav2909/DoubleDQN_turtlebot2')">
-                    <img src="resources/turtlebot2.png" loading="lazy" alt="Human-Preference and RL trained Safe path planning for TurtleBot">
-                    <h1>Human-Preference and RL trained Safe path planning for TurtleBot</h1>
-                    <h2>Enhancing TurtleBot Navigation: Integrating Reinforcement Learning with Human Preferences for Safe and Human-like Control.</h2>
-                    <gh><a href="https://github.com/prav2909/DoubleDQN_turtlebot2"><i class="fa fa-github"></i></a></gh>
-                </div>
-                <div class="portfolio-card" onclick="navigateTo('https://github.com/prav2909/Biographer_Mistral7BRAG')">
-                    <img src="resources/mistral7b.png" loading="lazy" alt="Personal Biographer">
-                    <h1>Personal Biographer</h1>
-                    <h2>Personal Biographer that uses Mistral 7B model tuned using RAG</h2>
-                    <gh><a href="https://github.com/prav2909/Biographer_Mistral7BRAG"><i class="fa fa-github"></i></a></gh>
-                </div>
-                <div class="portfolio-card" onclick="navigateTo('https://github.com/prav2909/ContextAwareGPT')">
-                    <img src="resources/openai_gpt_api.png" loading="lazy" alt="Context Aware GPT">
-                    <h1>Context Aware GPT</h1>
-                    <h2>API to use OpenAI GPT model by passing raw context</h2>
-                    <gh><a href="https://github.com/prav2909/ContextAwareGPT"><i class="fa fa-github"></i></a></gh>
-                </div>
-            </div>
-        </div>
+  <div class="career">
+  <h1>Professional Journey</h1>
+  <div class="badge-panel">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/KPIT_Technologies_Logo.svg/240px-KPIT_Technologies_Logo.svg.png" loading="lazy" title="Research and Dev Engineer">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mercedes-Benz_Logo_2010.svg/1920px-Mercedes-Benz_Logo_2010.svg.png" style="background-color: white;" loading="lazy" title="Deep Learning Engineer">
+  <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Veoneer_logo.png" loading="lazy" title="Radar Machine Learning Engineer">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Magna_logo.svg/1920px-Magna_logo.svg.png" loading="lazy" title="Machine Learning Engineer">
+  </div>
+  </div>
+ 
 
-        <div class="portfolio">
-            <h1>Technical Blogs (and my photography skills)</h1>
-            <div class="portfolio-panel">
-                <div class="portfolio-card" onclick="navigateTo('https://medium.com/@praveenkumar2909/decoding-the-transformer-model-architecture-loss-function-and-inference-from-the-attention-is-717b98d183b3')">
-                    <img src="resources/eiffel.gif" loading="lazy" alt="Attention is All You Need">
-                    <h1>Attention is All You Need</h1>
-                    <gh><a href="https://medium.com/@praveenkumar2909/decoding-the-transformer-model-architecture-loss-function-and-inference-from-the-attention-is-717b98d183b3"><i class="fa fa-medium"></i></a></gh>
-                </div>
-                <div class="portfolio-card" onclick="navigateTo('https://medium.com/@praveenkumar2909/understanding-the-bias-variance-tradeoff-in-machine-learning-f1cb74169250')">
-                    <img src="resources/cake.jpg" loading="lazy" alt="Understanding the Bias-Variance...">
-                    <h1>Understanding the Bias-Variance...</h1>
-                    <gh><a href="https://medium.com/@praveenkumar2909/understanding-the-bias-variance-tradeoff-in-machine-learning-f1cb74169250"><i class="fa fa-medium"></i></a></gh>
-                </div>
-                <div class="portfolio-card" onclick="navigateTo('https://medium.com/codex/quick-overview-types-of-loss-functions-and-their-use-cases-2868fc649d79')">
-                    <img src="resources/castle.gif" loading="lazy" alt="Types of Loss functions and their use cases and code">
-                    <h1>Types of Loss functions and their use cases and code</h1>
-                    <gh><a href="https://medium.com/codex/quick-overview-types-of-loss-functions-and-their-use-cases-2868fc649d79"><i class="fa fa-medium"></i></a></gh>
-                </div>
-                <div class="portfolio-card" onclick="navigateTo('https://medium.com/analytics-vidhya/a-short-introduction-of-stylegan-898fe781937')">
-                    <img src="resources/village.jpg" loading="lazy" alt="A short introduction to StyleGAN">
-                    <h1>A short introduction to StyleGAN</h1>
-                    <gh><a href="https://medium.com/analytics-vidhya/a-short-introduction-of-stylegan-898fe781937"><i class="fa fa-medium"></i></a></gh>
-                </div>
-                <div class="portfolio-card" onclick="navigateTo('https://medium.com/@praveenkumar2909/bytetrack-because-deep-learning-is-not-the-only-solution-adce87deb282')">
-                    <img src="resources/scarborough.jpg" loading="lazy" alt="ByteTrack …Because deep learning is not the ‘only’ solution">
-                    <h1>ByteTrack …Because deep learning is not the ‘only’ solution</h1>
-                    <gh><a href="https://medium.com/@praveenkumar2909/bytetrack-because-deep-learning-is-not-the-only-solution-adce87deb282"><i class="fa fa-medium"></i></a></gh>
-                </div>
-                <div class="portfolio-card" onclick="navigateTo('https://medium.com/codex/generative-facial-prior-gan-gfp-gan-explained-5d126bc7f383')">
-                    <img src="resources/sunset.jpg" loading="lazy" alt="Generative Facial Prior GAN(GFP-GAN) Explained">
-                    <h1>Generative Facial Prior GAN(GFP-GAN) Explained</h1>
-                    <gh><a href="https://medium.com/codex/generative-facial-prior-gan-gfp-gan-explained-5d126bc7f383"><i class="fa fa-medium"></i></a></gh>
-                </div>
-            </div>
-        </div>
+  <div class="portfolio">
+  <h1>Repositories</h1>
+  <div class="portfolio-panel">
+  <div class="portfolio-card" onclick="navigateTo('https://github.com/prav2909/vision_transformer')">
+  <img src="resources/vit.png" loading="lazy" alt="Vision Transformer (ViT)">
+  <h1>Vision Transformer (ViT)</h1>
+  <h2>Leveraging Self-Attention Mechanisms for Precise and Efficient Visual Categorization</h2>
+  <gh><a href="https://github.com/prav2909/vision_transformer"><i class="fa fa-github"></i></a></gh>
+  </div>
+  <div class="portfolio-card" onclick="navigateTo('https://github.com/prav2909/ClassifyAnything')">
+  <img src="resources/segmentation.jpg" loading="lazy" alt="Detection Transformers (DETR)">
+  <h1>Detection Transformers (DETR)</h1>
+  <h2>Classify and segment any image using Detection Transformers</h2>
+  <gh><a href="https://github.com/prav2909/ClassifyAnything"><i class="fa fa-github"></i></a></gh>
+  </div>
+  <div class="portfolio-card" onclick="navigateTo('https://github.com/prav2909/yolov1')">
+  <img src="resources/object_detection.jpg" loading="lazy" alt="YOLOV1">
+  <h1>YOLO Reimagined</h1>
+  <h2>Advanced Object Detection and Recognition for Enhanced Visual Perception.</h2>
+  <gh><a href="https://github.com/prav2909/yolov1"><i class="fa fa-github"></i></a></gh>
+  </div>
+  <div class="portfolio-card" onclick="navigateTo('https://github.com/prav2909/DoubleDQN_turtlebot2')">
+  <img src="resources/turtlebot2.png" loading="lazy" alt="Human-Preference and RL trained Safe path planning for TurtleBot">
+  <h1>Human-Preference and RL trained Safe path planning for TurtleBot</h1>
+  <h2>Enhancing TurtleBot Navigation: Integrating Reinforcement Learning with Human Preferences for Safe and Human-like Control.</h2>
+  <gh><a href="https://github.com/prav2909/DoubleDQN_turtlebot2"><i class="fa fa-github"></i></a></gh>
+  </div>
+  <div class="portfolio-card" onclick="navigateTo('https://github.com/prav2909/Biographer_Mistral7BRAG')">
+  <img src="resources/mistral7b.png" loading="lazy" alt="Personal Biographer">
+  <h1>Personal Biographer</h1>
+  <h2>Personal Biographer that uses Mistral 7B model tuned using RAG</h2>
+  <gh><a href="https://github.com/prav2909/Biographer_Mistral7BRAG"><i class="fa fa-github"></i></a></gh>
+  </div>
+  <div class="portfolio-card" onclick="navigateTo('https://github.com/prav2909/ContextAwareGPT')">
+  <img src="resources/openai_gpt_api.png" loading="lazy" alt="Context Aware GPT">
+  <h1>Context Aware GPT</h1>
+  <h2>API to use OpenAI GPT model by passing raw context</h2>
+  <gh><a href="https://github.com/prav2909/ContextAwareGPT"><i class="fa fa-github"></i></a></gh>
+  </div>
+  </div>
+  </div>
+ 
 
-        <div class="portfolio">
-            <h1>Papers and Publications</h1>
-            <div class="portfolio-panel">
-                <div class="portfolio-card" onclick="navigateTo('https://www.sciencedirect.com/science/article/pii/S2212827123009241')">
-                    <img src="resources/thesis_paper.jpg" loading="lazy" alt="An Architecture for Adaptive Machine Learning Models Using Adversarial and Transfer Learning">
-                    <h2>An Architecture for Adaptive Machine Learning Models Using Adversarial and Transfer Learning</h2>
-                    <gh><a href="https://www.sciencedirect.com/science/article/pii/S2212827123009241"><i class="fa fa-book"></i></a></gh>
-                </div>
-                <div class="portfolio-card" onclick="navigateTo('https://www.academia.edu/126923076/Interpretation_of_Activation_Maps_in_Generative_Model?source=swp_share')">
-                    <img src="resources/latent_space.jpg" loading="lazy" alt="Interpretation of Activation Maps in Generative Models">
-                    <h2>Interpretation of Activation Maps in Generative Models</h2>
-                    <gh><a href="https://www.academia.edu/126923076/Interpretation_of_Activation_Maps_in_Generative_Model?source=swp_share"><i class="fa fa-book"></i></a></gh>
-                </div>
-                <div class="portfolio-card" onclick="navigateTo('https://www.academia.edu/126923250/Risk_assessment_of_the_result_of_AI_algorithms_at_runtime?source=swp_share')">
-                    <img src="resources/xai.jpg" loading="lazy" alt="Risk assessment of the result of AI algorithms at runtime">
-                    <h2>Risk assessment of the result of AI algorithms at runtime</h2>
-                    <gh><a href="https://www.academia.edu/126923250/Risk_assessment_of_the_result_of_AI_algorithms_at_runtime?source=swp_share"><i class="fa fa-book"></i></a></gh>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="js/main.js"></script>
-</body>
+  <div class="portfolio">
+  <h1>Technical Blogs (and my photography skills)</h1>
+  <div class="portfolio-panel">
+  <div class="portfolio-card" onclick="navigateTo('https://medium.com/@praveenkumar2909/decoding-the-transformer-model-architecture-loss-function-and-inference-from-the-attention-is-717b98d183b3')">
+  <img src="resources/eiffel.gif" loading="lazy" alt="Attention is All You Need">
+  <h1>Attention is All You Need</h1>
+  <gh><a href="https://medium.com/@praveenkumar2909/decoding-the-transformer-model-architecture-loss-function-and-inference-from-the-attention-is-717b98d183b3"><i class="fa fa-medium"></i></a></gh>
+  </div>
+  <div class="portfolio-card" onclick="navigateTo('https://medium.com/@praveenkumar2909/understanding-the-bias-variance-tradeoff-in-machine-learning-f1cb74169250')">
+  <img src="resources/cake.jpg" loading="lazy" alt="Understanding the Bias-Variance...">
+  <h1>Understanding the Bias-Variance...</h1>
+  <gh><a href="https://medium.com/@praveenkumar2909/understanding-the-bias-variance-tradeoff-in-machine-learning-f1cb74169250"><i class="fa fa-medium"></i></a></gh>
+  </div>
+  <div class="portfolio-card" onclick="navigateTo('https://medium.com/codex/quick-overview-types-of-loss-functions-and-their-use-cases-2868fc649d79')">
+  <img src="resources/castle.gif" loading="lazy" alt="Types of Loss functions and their use cases and code">
+  <h1>Types of Loss functions and their use cases and code</h1>
+  <gh><a href="https://medium.com/codex/quick-overview-types-of-loss-functions-and-their-use-cases-2868fc649d79"><i class="fa fa-medium"></i></a></gh>
+  </div>
+  <div class="portfolio-card" onclick="navigateTo('https://medium.com/analytics-vidhya/a-short-introduction-of-stylegan-898fe781937')">
+  <img src="resources/village.jpg" loading="lazy" alt="A short introduction to StyleGAN">
+  <h1>A short introduction to StyleGAN</h1>
+  <gh><a href="https://medium.com/analytics-vidhya/a-short-introduction-of-stylegan-898fe781937"><i class="fa fa-medium"></i></a></gh>
+  </div>
+  <div class="portfolio-card" onclick="navigateTo('https://medium.com/@praveenkumar2909/bytetrack-because-deep-learning-is-not-the-only-solution-adce87deb282')">
+  <img src="resources/scarborough.jpg" loading="lazy" alt="ByteTrack …Because deep learning is not the ‘only’ solution">
+  <h1>ByteTrack …Because deep learning is not the ‘only’ solution</h1>
+  <gh><a href="https://medium.com/@praveenkumar2909/bytetrack-because-deep-learning-is-not-the-only-solution-adce87deb282"><i class="fa fa-medium"></i></a></gh>
+  </div>
+  <div class="portfolio-card" onclick="navigateTo('https://medium.com/codex/generative-facial-prior-gan-gfp-gan-explained-5d126bc7f383')">
+  <img src="resources/sunset.jpg" loading="lazy" alt="Generative Facial Prior GAN(GFP-GAN) Explained">
+  <h1>Generative Facial Prior GAN(GFP-GAN) Explained</h1>
+  <gh><a href="https://medium.com/codex/generative-facial-prior-gan-gfp-gan-explained-5d126bc7f383"><i class="fa fa-medium"></i></a></gh>
+  </div>
+  </div>
+  </div>
+ 
 
-</html>
+  <div class="portfolio">
+  <h1>Papers and Publications</h1>
+  <div class="portfolio-panel">
+  <div class="portfolio-card" onclick="navigateTo('https://www.sciencedirect.com/science/article/pii/S2212827123009241')">
+  <img src="resources/thesis_paper.jpg" loading="lazy" alt="An Architecture for Adaptive Machine Learning Models Using Adversarial and Transfer Learning">
+  <h2>An Architecture for Adaptive Machine Learning Models Using Adversarial and Transfer Learning</h2>
+  <gh><a href="https://www.sciencedirect.com/science/article/pii/S2212827123009241"><i class="fa fa-book"></i></a></gh>
+  </div>
+  <div class="portfolio-card" onclick="navigateTo('https://www.academia.edu/126923076/Interpretation_of_Activation_Maps_in_Generative_Model?source=swp_share')">
+  <img src="resources/latent_space.jpg" loading="lazy" alt="Interpretation of Activation Maps in Generative Models">
+  <h2>Interpretation of Activation Maps in Generative Models</h2>
+  <gh><a href="https://www.academia.edu/126923076/Interpretation_of_Activation_Maps_in_Generative_Model?source=swp_share"><i class="fa fa-book"></i></a></gh>
+  </div>
+  <div class="portfolio-card" onclick="navigateTo('https://www.academia.edu/126923250/Risk_assessment_of_the_result_of_AI_algorithms_at_runtime?source=swp_share')">
+  <img src="resources/xai.jpg" loading="lazy" alt="Risk assessment of the result of AI algorithms at runtime">
+  <h2>Risk assessment of the result of AI algorithms at runtime</h2>
+  <gh><a href="https://www.academia.edu/126923250/Risk_assessment_of_the_result_of_AI_algorithms_at_runtime?source=swp_share"><i class="fa fa-book"></i></a></gh>
+  </div>
+  </div>
+  </div>
+  </div>
+  <script src="js/main.js"></script>
+ </body>
+ 
+
+ </html>
