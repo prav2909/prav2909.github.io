@@ -1,81 +1,101 @@
 body {
-    height: 0%;
+    height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background: linear-gradient(45deg, #1e003c, #001e3c, #003c1e, #3c1e00);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .page-content {
     flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1 {
     color: #ffffff;
-    font-family: "poppins-medium", sans-serif;
-    font-size: 2.5em;
-    max-width: 900px;
+    font-size: 2.2em;
     text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
 h2 {
-    color: #ffffff;
-    font-family: "poppins-medium", sans-serif;
-    font-size: 1.5em;
+    color: #bdbdbd;
+    font-size: 1.2em;
     text-align: center;
-    max-width: 900px;
-    margin: 5px 10px 10px 10px;
+    margin: 10px auto;
+    max-width: 800px;
+    line-height: 1.6;
 }
 
 .portfolio,
 .career,
 .intro {
-    background-color: transparent;
+    background-color: #1e1e1e;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    margin: 10px 10px 10px 10px;
+    border-radius: 12px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .intro img {
-    width: clamp(80px, 20vw, 200px);
-    border-radius: 8px;
+    width: clamp(100px, 20vw, 200px);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .badge-panel {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    padding: 10px;
-    overflow: hidden;
+    padding: 15px;
 }
 
 .badge-panel badge {
     color: #ffffff;
-    font-family: "poppins-medium", sans-serif;
     font-size: 1.0em;
-    background-color: black;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 10px 5px 10px;
-    border-radius: 10px;
+    background-color: #333;
+    margin: 8px;
+    padding: 8px 16px;
+    border-radius: 12px;
 }
 
 .badge-panel img {
-    border-radius: 0%;
-    margin: 5px 2px 15px 2px;
+    border-radius: 8px;
+    margin: 8px;
     width: auto;
-    height: 45px;
+    height: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .portfolio-panel {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10px;
+    padding: 15px;
 }
 
 :root {
@@ -84,51 +104,60 @@ h2 {
 }
 
 .portfolio-card {
-    background: rgb(15, 15, 15);
+    background: #282828;
     width: var(--card-width);
     height: var(--card-height);
-    padding: 10px;
-    border-radius: 10px;
+    padding: 15px;
+    border-radius: 12px;
     text-align: center;
-    margin: 10px;
+    margin: 15px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
 }
 
 .portfolio-card img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 8px;
     display: block;
-    transition: transform 0.1s;
     max-height: 60%;
     object-fit: cover;
     flex-grow: 1;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card img:hover{
+    transform: scale(1.05);
 }
 
 .portfolio-card h1 {
     color: #ffffff;
-    font-family: "poppins-medium", sans-serif;
     font-size: 1.1em;
     text-align: center;
     flex-shrink: 0;
     margin: 10px 0 0 0;
+    font-weight: 600;
 }
 
 .portfolio-card h2 {
-    color: #ffffff;
-    font-family: "poppins-medium", sans-serif;
+    color: #bdbdbd;
     font-size: 0.9em;
     text-align: center;
     flex-shrink: 0;
     margin: 10px 0 0 0;
+    line-height: 1.4;
 }
 
 .portfolio-card gh {
-    color: white;
-    bottom: 4.5rem;
+    color: #ffffff;
     font-size: 2.3rem;
     margin: 0;
     padding: 0;
@@ -136,10 +165,8 @@ h2 {
     transition: transform 0.5s;
 }
 
-.portfolio-card:hover {
-    gh {
-        transform: scale(1.2);
-    }
+.portfolio-card:hover gh {
+    transform: scale(1.2);
 }
 
 .portfolio-card:hover a {
@@ -165,11 +192,11 @@ html a {
     color: #ffffff;
 }
 
-
 @media (max-width: 600px) {
     .badge-panel {
         align-items: flex-start;
         justify-content: center;
     }
-
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
